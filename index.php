@@ -1,9 +1,6 @@
-<html>
+<?php
+  require_once "./config/APP.php";
+  require_once "./controladores/vistasControlador.php";
 
-  <head>
-  </head>
-
-  <body>
-    <p>hola</p>
-  </body>
-</html>
+  $plantilla = new vistasControlador();
+  $plantilla->obtener_plantilla_controlador();
